@@ -6,7 +6,7 @@ class DatosModel extends Model {
      public function obtenerInformacion($data){
           $model = $this ->db->table('persona');
           $model-> where($data);
-          return $model->getResult();
+          return $model->get()->getResultArray();
      }
      
     
