@@ -15,7 +15,7 @@ class General extends BaseController
 		];
 		return view('listado',$data);
 	}
-}
+
         public function obtenerDatos($id) {
 		$model = new DatosModel();
 		$data = ["id" => $id];
